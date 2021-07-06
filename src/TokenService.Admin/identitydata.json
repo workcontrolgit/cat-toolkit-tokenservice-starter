@@ -2,7 +2,7 @@
   "IdentityData": {
     "Roles": [
       {
-        "Name": "MyRole"
+        "Name": "STSAdminRole"
       },
       {
         "Name": "Employee"
@@ -20,7 +20,7 @@
         "Password": "Pa$$word123",
         "Email": "admin@example.com",
         "Roles": [
-          "MyRole"
+          "STSAdminRole"
         ],
         "Claims": [
           {
