@@ -10,21 +10,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F9C34AD8-7BF
 		README.MD = README.MD
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TokenProject.Admin", "src\TokenProject.Admin\TokenProject.Admin.csproj", "{7434760E-D2CE-4D60-8A1C-DFE8C0B44060}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TokenService.Admin", "src\TokenService.Admin\TokenService.Admin.csproj", "{7434760E-D2CE-4D60-8A1C-DFE8C0B44060}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TokenProject.STS.Identity", "src\TokenProject.STS.Identity\TokenProject.STS.Identity.csproj", "{0CF50208-CFEF-413A-8E33-E88EC46C63C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TokenService.STS.Identity", "src\TokenService.STS.Identity\TokenService.STS.Identity.csproj", "{0CF50208-CFEF-413A-8E33-E88EC46C63C2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TokenProject.Admin.Api", "src\TokenProject.Admin.Api\TokenProject.Admin.Api.csproj", "{AF54CF2C-A867-4B74-ACAC-EF910D0B1E3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TokenService.Admin.Api", "src\TokenService.Admin.Api\TokenService.Admin.Api.csproj", "{AF54CF2C-A867-4B74-ACAC-EF910D0B1E3A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TokenProject.Admin.EntityFramework.Shared", "src\TokenProject.Admin.EntityFramework.Shared\TokenProject.Admin.EntityFramework.Shared.csproj", "{28F1DEF4-5908-41EC-8290-D9CC7A07B30D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TokenService.Admin.EntityFramework.Shared", "src\TokenService.Admin.EntityFramework.Shared\TokenService.Admin.EntityFramework.Shared.csproj", "{28F1DEF4-5908-41EC-8290-D9CC7A07B30D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TokenProject.Admin.EntityFramework.MySql", "src\TokenProject.Admin.EntityFramework.MySql\TokenProject.Admin.EntityFramework.MySql.csproj", "{7F75C565-F1E6-43ED-B620-D7B428E28336}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TokenService.Admin.EntityFramework.MySql", "src\TokenService.Admin.EntityFramework.MySql\TokenService.Admin.EntityFramework.MySql.csproj", "{7F75C565-F1E6-43ED-B620-D7B428E28336}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TokenProject.Admin.EntityFramework.PostgreSQL", "src\TokenProject.Admin.EntityFramework.PostgreSQL\TokenProject.Admin.EntityFramework.PostgreSQL.csproj", "{08B2B0F4-96FC-4486-A33F-D73C9AFC9A4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TokenService.Admin.EntityFramework.PostgreSQL", "src\TokenService.Admin.EntityFramework.PostgreSQL\TokenService.Admin.EntityFramework.PostgreSQL.csproj", "{08B2B0F4-96FC-4486-A33F-D73C9AFC9A4F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TokenProject.Admin.EntityFramework.SqlServer", "src\TokenProject.Admin.EntityFramework.SqlServer\TokenProject.Admin.EntityFramework.SqlServer.csproj", "{24E40F00-5067-4857-B3A5-6D20AB89C266}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TokenService.Admin.EntityFramework.SqlServer", "src\TokenService.Admin.EntityFramework.SqlServer\TokenService.Admin.EntityFramework.SqlServer.csproj", "{24E40F00-5067-4857-B3A5-6D20AB89C266}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TokenProject.Shared", "src\TokenProject.Shared\TokenProject.Shared.csproj", "{B2A722D0-17AB-45A9-A9B1-2966EADB99CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TokenService.Shared", "src\TokenService.Shared\TokenService.Shared.csproj", "{B2A722D0-17AB-45A9-A9B1-2966EADB99CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

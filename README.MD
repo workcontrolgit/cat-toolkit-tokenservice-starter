@@ -5,7 +5,7 @@ Medium publication - [IdentityServer4 Admin UI Setup in Azure](https://medium.co
 dotnet new -i Skoruba.IdentityServer4.Admin.Templates::2.0.1
 
 ## Create new project
-dotnet new skoruba.is4admin --name TokenProject --title TokenProject --adminemail "admin@example.com" --adminpassword "Pa$$word123" --adminrole MyRole --adminclientid MyClientId --adminclientsecret MyClientSecret --dockersupport true
+dotnet new skoruba.is4admin --name TokenService --title TokenService --adminemail "admin@example.com" --adminpassword "Pa$$word123" --adminrole MyRole --adminclientid MyClientId --adminclientsecret MyClientSecret --dockersupport true
 
 ## Project URL localhost and Azure
 ### DemoProject.Admin 
