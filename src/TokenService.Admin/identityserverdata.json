@@ -63,8 +63,8 @@
     ],
     "ApiScopes": [
       {
-        "Name": "MyClientId_api",
-        "DisplayName": "MyClientId_api",
+        "Name": "STSAdminUIClientId_api",
+        "DisplayName": "STSAdminUIClientId_api",
         "Required": true,
         "UserClaims": [
           "role",
@@ -92,9 +92,9 @@
     ],
     "ApiResources": [
       {
-        "Name": "MyClientId_api",
+        "Name": "STSAdminUIClientId_api",
         "Scopes": [
-          "MyClientId_api"
+          "STSAdminUIClientId_api"
         ]
       },
       {
@@ -106,8 +106,8 @@
     ],
     "Clients": [
       {
-        "ClientId": "MyClientId",
-        "ClientName": "MyClientId",
+        "ClientId": "STSAdminUIClientId",
+        "ClientName": "STSAdminUIClientId",
         "ClientUri": "https://localhost:44303",
         "AllowedGrantTypes": [
           "authorization_code"
@@ -193,8 +193,8 @@
         ]
       },
       {
-        "ClientId": "MyClientId_api_swaggerui",
-        "ClientName": "MyClientId_api_swaggerui",
+        "ClientId": "STSAdminUIClientId_api_swaggerui",
+        "ClientName": "STSAdminUIClientId_api_swaggerui",
         "AllowedGrantTypes": [
           "authorization_code"
         ],
@@ -205,7 +205,7 @@
           "https://cat-token-adminapi.azurewebsites.net/swagger/oauth2-redirect.html"
         ],
         "AllowedScopes": [
-          "MyClientId_api"
+          "STSAdminUIClientId_api"
         ],
         "AllowedCorsOrigins": [
           "https://localhost:44302",
