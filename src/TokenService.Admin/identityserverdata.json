@@ -166,6 +166,32 @@
         ]
       },
       {
+        "ClientId": "Blazor.Spa",
+        "ClientName": "Blazor WASM Client",
+        "ClientUri": "http://localhost:44369",
+        "AllowedGrantTypes": [
+          "authorization_code"
+        ],
+        "RequirePkce": true,
+        "RequireClientSecret": false,
+        "RedirectUris": [
+          "http://localhost:44369/authentication/login-callback"
+        ],
+        "PostLogoutRedirectUris": [
+          "http://localhost:44369/authentication/logout-callback"
+        ],
+        "AllowedCorsOrigins": [
+          "http://localhost:44369"
+        ],
+        "AllowedScopes": [
+          "openid",
+          "email",
+          "profile",
+          "roles",
+          "app.api.employeeprofile.read"
+        ]
+      },
+      {
         "ClientId": "AngularStarterKit",
         "ClientName": "Angular Starter Kit",
         "ClientUri": "http://localhost:4200",
@@ -173,6 +199,7 @@
           "authorization_code"
         ],
         "RequirePkce": true,
+        "AllowOfflineAccess": true,
         "RequireClientSecret": false,
         "RedirectUris": [
           "http://localhost:4200/auth-callback",
