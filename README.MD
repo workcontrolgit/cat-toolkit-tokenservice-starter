@@ -8,14 +8,14 @@ dotnet new -i Skoruba.IdentityServer4.Admin.Templates::2.0.1
 dotnet new skoruba.is4admin --name TokenService --title TokenService --adminemail "admin@example.com" --adminpassword "Pa$$word123" --adminrole STSAdminRole --adminclientid STSAdminUIClientId --adminclientsecret MyClientSecret --dockersupport true
 
 ## Project URL localhost and Azure
-### DemoProject.Admin 
+### TokenProject.Admin 
 https://localhost:44303 
 https://cat-token-admin.azurewebsites.net
 
-### DemoProject.Admin.Api
+### TokenProject.Admin.Api
 https://localhost:44302
 https://cat-token-adminapi.azurewebsites.net
 
-### DemoProject.STS.Identity
+### TokenProject.STS.Identity
 https://localhost:44310
 https://cat-token-identity.azurewebsites.net
