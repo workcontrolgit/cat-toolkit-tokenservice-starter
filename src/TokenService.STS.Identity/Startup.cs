@@ -13,6 +13,9 @@ using TokenService.STS.Identity.Configuration.Interfaces;
 using TokenService.STS.Identity.Helpers;
 using System;
 using Skoruba.IdentityServer4.Shared.Configuration.Helpers;
+using IdentityServer4;
+using Microsoft.AspNetCore.Authentication.Google;
+using Microsoft.AspNetCore.Authentication.Facebook;
 
 namespace TokenService.STS.Identity
 {
@@ -43,6 +46,10 @@ namespace TokenService.STS.Identity
             // Add services for authentication, including Identity model and external providers
             RegisterAuthentication(services);
 
+            #region Configure External Identity Providers
+            ConfigureExternalIdentityProviders(services);
+            #endregion
+
             // Add HSTS options
             RegisterHstsOptions(services);
 
@@ -55,6 +62,31 @@ namespace TokenService.STS.Identity
             RegisterAuthorization(services);
 
             services.AddIdSHealthChecks<IdentityServerConfigurationDbContext, IdentityServerPersistedGrantDbContext, AdminIdentityDbContext, IdentityServerDataProtectionDbContext>(Configuration);
+        }
+
+        private void ConfigureExternalIdentityProviders(IServiceCollection services)
+        {
+            var autBuilder = services.AddAuthentication();
+
+            // Google
+            autBuilder.AddGoogle(GoogleDefaults.AuthenticationScheme, "Google Login", options => SetGoolgeOptions(options));
+
+            // Facebook
+            autBuilder.AddFacebook(FacebookDefaults.AuthenticationScheme, "Facebook Login", options => SetFacebookOptions(options));
+        }
+
+        private void SetGoolgeOptions(GoogleOptions options)
+        {
+            options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
+            options.ClientId = "386933463413-c94j09mgm1pi6pr5u9t24u3bhagqrtqq.apps.googleusercontent.com";
+            options.ClientSecret = "M0KQP85Y9ALxNkmBbk5ObsIM";
+        }
+
+        private void SetFacebookOptions(FacebookOptions options)
+        {
+            options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
+            options.AppId = "Appid";
+            options.AppSecret = "appsecret";
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
